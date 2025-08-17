@@ -1936,7 +1936,14 @@ h3 {
     z-index: 1000;
   }
   .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 10px 0;
+  }
+  .navbar-nav .nav-item {
+    width: 100%;
+    text-align: center;
   }
 }
 @media (max-width: 768px) {
