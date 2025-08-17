@@ -108,18 +108,38 @@ h3 {
 }
 
 .btn-primary {
-    background-color: v.$primary-color;
-    border-color: v.$primary-color;
-    color: v.$background-color;
+    background-color: v.$primary-color !important;
+    border-color: v.$primary-color !important;
+    color: v.$background-color !important;
     font-weight: bold;
     transition: all 0.3s ease;
+    @extend .lift-up;
 }
 
+.btn-primary:focus,
+.btn-primary:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-primary:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-outline-secondary:focus,
+.btn-outline-secondary:active,
+.btn-outline-secondary:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
 .btn-primary:hover {
-    background-color: v.$button-hover;
-    border-color: v.$button-hover;
-    color: v.$background-color;
-    transform: translateY(-2px);
+    background-color: v.$button-hover !important;
+    border-color: v.$button-hover !important;
+    color: v.$background-color !important;
+    @extend .lift-up;
 }
 
 .btn-outline-secondary {

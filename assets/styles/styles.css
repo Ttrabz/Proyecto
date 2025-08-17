@@ -65,7 +65,7 @@ header {
   animation: outline-secondary-hover 0.3s ease forwards;
 }
 
-.lift-up, .feature-card, .btn-primary, .partner-logo:hover, .news-card:hover {
+.lift-up, .feature-card, .btn-primary, .btn-primary:hover, .partner-logo:hover, .news-card:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .lift-up:hover, .feature-card:hover, .btn-primary:hover, .partner-logo:hover, .news-card:hover {
@@ -147,6 +147,14 @@ footer {
   color: #ffffff;
   text-decoration: none;
   transition: color 0.3s ease;
+  outline: none;
+  box-shadow: none;
+}
+
+.footer-section a:focus,
+.footer-section a:active {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .footer-section a:hover {
@@ -1432,6 +1440,14 @@ html {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  outline: none;
+  box-shadow: none;
+}
+
+.contact-btn:focus,
+.contact-btn:active {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .presentation-btn {
@@ -1443,6 +1459,12 @@ html {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.presentation-btn:focus,
+.presentation-btn:active {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .contact-btn {
@@ -1459,12 +1481,22 @@ html {
 .presentation-btn {
   border-color: #ff9098;
   color: #ff9098;
+  background-color: transparent;
 }
 
 .presentation-btn:hover {
   background-color: #ff9098;
-  color: #000000;
+  color: #ffffff;
   border-color: #ff9098;
+}
+
+.presentation-btn:focus,
+.presentation-btn:active {
+  background-color: transparent !important;
+  color: #ff9098 !important;
+  border-color: #ff9098 !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .partners-grid {
@@ -1681,18 +1713,35 @@ h3 {
 }
 
 .btn-primary {
-  background-color: #ff9098;
-  border-color: #ff9098;
-  color: #000000;
+  background-color: #ff9098 !important;
+  border-color: #ff9098 !important;
+  color: #000000 !important;
   font-weight: bold;
   transition: all 0.3s ease;
 }
 
+.btn-primary:focus,
+.btn-primary:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn-primary:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn-outline-secondary:focus,
+.btn-outline-secondary:active,
+.btn-outline-secondary:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 .btn-primary:hover {
-  background-color: #ff7a85;
-  border-color: #ff7a85;
-  color: #000000;
-  transform: translateY(-2px);
+  background-color: #ff7a85 !important;
+  border-color: #ff7a85 !important;
+  color: #000000 !important;
 }
 
 .btn-outline-secondary {

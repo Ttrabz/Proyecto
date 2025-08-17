@@ -44,6 +44,14 @@
     align-items: center;
     gap: 0.5rem;
     @extend .scale-up;
+    outline: none;
+    box-shadow: none;
+}
+
+.contact-btn:focus,
+.contact-btn:active {
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 .presentation-btn {
@@ -56,7 +64,10 @@
     align-items: center;
     gap: 0.5rem;
     @extend .scale-up;
+    outline: none;
+    box-shadow: none;
 }
+
 
 .contact-btn {
     border-color: v.$secondary-color;
@@ -73,12 +84,22 @@
 .presentation-btn {
     border-color: v.$primary-color;
     color: v.$primary-color;
+    background-color: transparent;
 }
 
 .presentation-btn:hover {
     background-color: v.$primary-color;
-    color: v.$background-color;
+    color: v.$secondary-color;
     border-color: v.$primary-color;
+}
+
+.presentation-btn:focus,
+.presentation-btn:active {
+    background-color: transparent !important;
+    color: v.$primary-color !important;
+    border-color: v.$primary-color !important;
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 .partners-grid {

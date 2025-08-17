@@ -59,6 +59,14 @@ footer {
     color: v.$secondary-color;
     text-decoration: none;
     transition: color 0.3s ease;
+    outline: none;
+    box-shadow: none;
+}
+
+.footer-section a:focus,
+.footer-section a:active {
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 .footer-section a:hover {
