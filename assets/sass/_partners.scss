@@ -68,7 +68,6 @@
     box-shadow: none;
 }
 
-
 .contact-btn {
     border-color: v.$secondary-color;
     color: v.$secondary-color;
@@ -203,10 +202,25 @@
     color: v.$secondary-color;
     padding: 0.8rem 2rem;
     font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-radius: 25px;
-}
+        border-color: v.$primary-color;
+        color: v.$primary-color;
+        background-color: transparent;
+    }
+
+    .presentation-btn:hover {
+        background-color: v.$primary-color;
+        color: v.$background-color; 
+        border-color: v.$primary-color;
+    }
+
+    .presentation-btn:focus,
+    .presentation-btn:active {
+        background-color: transparent;
+        color: v.$primary-color;
+        border-color: v.$primary-color;
+        outline: none;
+        box-shadow: none;
+    }
 
 .visit-btn:hover {
     background-color: v.$primary-color;

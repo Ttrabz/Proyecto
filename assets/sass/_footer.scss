@@ -126,13 +126,13 @@ footer {
     }
     
     footer .col-lg-2 {
-        text-align: center;
+        text-align: left;
         flex: 0 0 18%;
         max-width: 18%;
     }
     
     footer .col-lg-3:last-child {
-        text-align: center;
+        text-align: left;
         flex: 0 0 22%;
         max-width: 22%;
     }
@@ -164,7 +164,7 @@ footer {
     footer .col-lg-2 ul,
     footer .col-lg-3:last-child .footer-title,
     footer .col-lg-3:last-child ul {
-        text-align: center;
+        text-align: left;
     }
 }
 

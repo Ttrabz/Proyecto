@@ -208,12 +208,12 @@ footer {
     max-width: 25%;
   }
   footer .col-lg-2 {
-    text-align: center;
+    text-align: left;
     flex: 0 0 18%;
     max-width: 18%;
   }
   footer .col-lg-3:last-child {
-    text-align: center;
+    text-align: left;
     flex: 0 0 22%;
     max-width: 22%;
   }
@@ -240,7 +240,7 @@ footer {
   footer .col-lg-2 ul,
   footer .col-lg-3:last-child .footer-title,
   footer .col-lg-3:last-child ul {
-    text-align: center;
+    text-align: left;
   }
 }
 @media (max-width: 1024px) {
@@ -1459,12 +1459,8 @@ html {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-}
-
-.presentation-btn:focus,
-.presentation-btn:active {
-  outline: none !important;
-  box-shadow: none !important;
+  outline: none;
+  box-shadow: none;
 }
 
 .contact-btn {
@@ -1596,9 +1592,24 @@ html {
   color: #ffffff;
   padding: 0.8rem 2rem;
   font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border-radius: 25px;
+  border-color: #ff9098;
+  color: #ff9098;
+  background-color: transparent;
+}
+
+.presentation-btn:hover {
+  background-color: #ff9098;
+  color: #000000;
+  border-color: #ff9098;
+}
+
+.presentation-btn:focus,
+.presentation-btn:active {
+  background-color: transparent;
+  color: #ff9098;
+  border-color: #ff9098;
+  outline: none;
+  box-shadow: none;
 }
 
 .visit-btn:hover {
@@ -1909,6 +1920,7 @@ h3 {
   .navbar-nav .nav-item:last-child::after {
     display: none;
   }
+  /* Footer desktop */
   footer .container-fluid {
     max-width: 1200px;
     margin: 0 auto;
@@ -1960,6 +1972,7 @@ h3 {
     text-align: center;
   }
 }
+/* TABLET (1024px y menos) */
 @media (max-width: 1024px) {
   .news-grid {
     grid-template-columns: 1fr;
@@ -1973,6 +1986,7 @@ h3 {
     height: 250px;
   }
 }
+/* TABLET PEQUEÑO (991px y menos) */
 @media (max-width: 991px) {
   .navbar-collapse {
     position: absolute;
@@ -1985,22 +1999,29 @@ h3 {
     z-index: 1000;
   }
   .navbar-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 10px 0;
+    align-items: center;
+    width: 100%;
   }
   .navbar-nav .nav-item {
     width: 100%;
     text-align: center;
   }
+  .about-section .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
+/* MÓVIL (768px y menos) */
 @media (max-width: 768px) {
+  /* Hero section */
   .hero-section {
     padding: 40px 20px;
     gap: 30px;
     flex-direction: column;
   }
+  /* Equipos */
   .teams-section {
     padding: 2rem 1.5rem 1.5rem;
   }
@@ -2023,6 +2044,7 @@ h3 {
   .team-box img {
     max-height: 140px;
   }
+  /* Logros, jugadores y torneos */
   .achievements-section,
   .players-section,
   .tournaments-section {
@@ -2058,6 +2080,7 @@ h3 {
     width: 60px;
     height: 60px;
   }
+  /* Noticias */
   .news-section {
     padding: 4rem 1.5rem 3rem;
   }
@@ -2102,6 +2125,7 @@ h3 {
     padding: 10px 14px;
     font-size: 0.9rem;
   }
+  /* Contacto */
   .contact-main {
     padding: 4rem 0 3rem;
   }
@@ -2132,6 +2156,7 @@ h3 {
     width: 100%;
     max-width: 200px;
   }
+  /* Partners */
   .partners-header {
     padding: 4rem 0 3rem;
   }
@@ -2175,6 +2200,7 @@ h3 {
     display: block;
     margin: 0 auto;
   }
+  /* Footer */
   footer {
     padding: 30px 15px 15px 15px;
   }
@@ -2187,6 +2213,7 @@ h3 {
     grid-template-columns: 1fr 1fr;
     gap: 15px;
     margin: 0;
+    justify-items: center;
   }
   .footer-section {
     padding: 20px 15px;
@@ -2230,6 +2257,7 @@ h3 {
     font-weight: bold;
   }
 }
+/* MÓVIL PEQUEÑO (576px y menos) */
 @media (max-width: 576px) {
   .footer-section {
     margin-bottom: 20px;
