@@ -1,0 +1,46 @@
+@use 'variables' as v;
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid v.$footer-border;
+    background-color: v.$background-color;
+}
+
+.logo {
+    height: 5vh;
+    width: auto;
+}
+
+.navbar-nav {
+    gap: 20px;
+}
+
+/* =====================================
+   ENLACES DE NAVEGACIÓN
+   ===================================== */
+
+.nav-link {
+    text-decoration: none;
+    color: v.$secondary-color;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: v.$primary-color;
+}
+
+.nav-link.active {
+    color: v.$primary-color !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.nav-link:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}

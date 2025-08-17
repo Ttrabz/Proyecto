@@ -1,0 +1,424 @@
+@media (min-width: 992px) {
+    .navbar-nav .nav-item:not(:last-child) {
+        margin-right: 10px;
+        padding-right: 10px;
+        position: relative;
+    }
+
+    .navbar-nav .nav-item:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 60%;
+        background-color: #888;
+    }
+
+    .navbar-nav .nav-item:last-child::after {
+        display: none;
+    }
+
+    footer .container-fluid {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    footer .row {
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    
+    footer .col-lg-3:first-child {
+        text-align: left;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    
+    footer .col-lg-2 {
+        text-align: center;
+        flex: 0 0 18%;
+        max-width: 18%;
+    }
+    
+    footer .col-lg-3:last-child {
+        text-align: center;
+        flex: 0 0 22%;
+        max-width: 22%;
+    }
+    
+    .footer-section {
+        padding: 0 15px;
+        margin-bottom: 0;
+    }
+    
+    .footer-section:first-child {
+        text-align: left;
+    }
+    
+    .footer-title {
+        font-size: 16px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+    
+    .social-media {
+        margin-top: 20px;
+        gap: 12px;
+        justify-content: flex-start;
+    }
+    
+    footer .col-lg-2 .footer-title,
+    footer .col-lg-2 ul,
+    footer .col-lg-3:last-child .footer-title,
+    footer .col-lg-3:last-child ul {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .news-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .news-card.featured {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+    
+    .news-card.featured .news-image {
+        height: 250px;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(39, 36, 36);
+        border-top: 1px solid #444;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        z-index: 1000;
+    }
+    
+    .navbar-nav {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 40px 20px;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .teams-section {
+        padding: 2rem 1.5rem 1.5rem;
+    }
+    
+    .teams-heading {
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .teams-subheading {
+        font-size: 0.85rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 15px;
+    }
+    
+    .teams-grid {
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+    
+    .team-box {
+        padding: 1rem;
+    }
+    
+    .team-box img {
+        max-height: 140px;
+    }
+
+    .achievements-section,
+    .players-section,
+    .tournaments-section {
+        padding: 3rem 1.5rem 2rem;
+        margin-top: 1.5rem;
+    }
+    
+    .achievements-title,
+    .players-title,
+    .tournaments-title {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .achievements-grid,
+    .players-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .achievement-card,
+    .player-card {
+        padding: 1.5rem;
+    }
+    
+    .tournament-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .tournament-date {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .player-avatar {
+        width: 60px;
+        height: 60px;
+    }
+
+    .news-section {
+        padding: 4rem 1.5rem 3rem;
+    }
+    
+    .news-title {
+        font-size: 2.5rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .news-subtitle {
+        font-size: 1rem;
+    }
+    
+    .news-header {
+        margin-bottom: 3rem;
+    }
+    
+    .news-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .news-content {
+        padding: 1.2rem;
+    }
+    
+    .news-card.featured .news-content {
+        padding: 1.5rem;
+    }
+    
+    .news-card-title {
+        font-size: 1.1rem;
+    }
+    
+    .news-card.featured .news-card-title {
+        font-size: 1.4rem;
+    }
+    
+    .news-image {
+        height: 180px;
+    }
+    
+    .news-card.featured .news-image {
+        height: 200px;
+    }
+    
+    .pagination {
+        margin-top: 2rem;
+    }
+    
+    .page-btn,
+    .next {
+        padding: 10px 14px;
+        font-size: 0.9rem;
+    }
+
+    .contact-main {
+        padding: 4rem 0 3rem;
+    }
+    
+    .contact-title {
+        font-size: 2.5rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .contact-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .contact-form {
+        padding: 2rem 1.5rem;
+        margin: 0 1rem;
+    }
+    
+    .contact-media {
+        margin-top: 3rem;
+    }
+    
+    .media-title {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .form-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form-buttons .btn {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .partners-header {
+        padding: 4rem 0 3rem;
+    }
+    
+    .partners-title {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        letter-spacing: 2px;
+    }
+    
+    .partners-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+        margin-bottom: 3rem;
+    }
+    
+    .contact-btn,
+    .presentation-btn {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
+    }
+    
+    .featured-partner {
+        padding: 2rem 1.5rem;
+        margin: 0 1rem 3rem;
+    }
+    
+    .partner-info {
+        padding-left: 0;
+        padding-top: 2rem;
+    }
+    
+    .partner-name {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .partner-description {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+    
+    .visit-btn {
+        width: 100%;
+        max-width: 200px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    footer {
+        padding: 30px 15px 15px 15px;
+    }
+    
+    footer .container-fluid {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    footer .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin: 0;
+    }
+    
+    .footer-section {
+        padding: 20px 15px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    
+    footer .col-lg-3:first-child {
+        grid-column: 1 / -1;
+        order: 1;
+    }
+    
+    footer .col-lg-2:nth-child(3) {
+        order: 2;
+    }
+    
+    footer .col-lg-3:last-child {
+        order: 3;
+    }
+    
+    footer .col-lg-2:nth-child(2) {
+        order: 4;
+    }
+    
+    footer .col-lg-2:nth-child(4) {
+        order: 5;
+    }
+    
+    .copyright-text, .footer-title {
+        text-align: center;
+    }
+    
+    .footer-section ul {
+        text-align: center;
+    }
+    
+    .social-media {
+        justify-content: center;
+        margin-top: 15px;
+    }
+    
+    .footer-logo {
+        margin: 0 auto 10px auto;
+        display: block;
+    }
+    
+    .footer-title {
+        color: #ff9098;
+        font-size: 16px;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-section {
+        margin-bottom: 20px;
+    }
+    
+    .footer-title {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+    
+    .footer-section li {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+}

@@ -1,0 +1,67 @@
+@use 'variables' as v;
+@use 'anims';
+
+.hero-section {
+    padding: 70px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.about-section {
+    background-color: v.$background-color;
+    color: v.$secondary-color;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: v.$primary-color !important;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: v.$accent-color !important;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    line-height: 1.6;
+}
+
+.info-card {
+    background-color: v.$gray-dark;
+    border-radius: 10px;
+    border: 1px solid v.$border-color;
+    @extend .scale-in;
+    height: 100%;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 144, 152, 0.1);
+}
+
+.info-card h3 {
+    color: v.$secondary-color !important;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.info-card p {
+    color: v.$accent-color !important;
+    line-height: 1.6;
+}
+
+.info-icon {
+    margin-bottom: 1rem;
+}
+
+.info-icon i {
+    color: v.$primary-color;
+}

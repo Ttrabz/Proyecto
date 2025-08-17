@@ -1,0 +1,23 @@
+$primary-color: #ff9098;
+$secondary-color: #ffffff;
+$background-color: #000000;
+$accent-color: #cccccc;
+$gray-light: #aaaaaa;
+$gray-dark: #1a1a1a;
+$border-color: #333;
+$footer-border: #444;
+$esports-border: #111;
+$button-hover: #ff7a85;
+$esports-bg: #0a0a0a;
+$esports-pink: #ff8f97;
+$label-color: #ffffff;
+$placeholder-color: #888;
+$fuente: 'Arial Narrow', Arial, sans-serif;
+
+body {
+    font-family: $fuente;
+    background-color: $background-color;
+    color: $secondary-color;
+}
+
+

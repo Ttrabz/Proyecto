@@ -1,0 +1,102 @@
+@use 'variables' as v;
+@use 'anims';
+
+.contact-main {
+    background-color: v.$background-color;
+    color: v.$secondary-color;
+    min-height: 80vh;
+    padding: 2rem 0 4rem;
+}
+
+.contact-form-section {
+    margin-bottom: 5rem;
+}
+
+.contact-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: v.$primary-color !important;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.contact-subtitle {
+    font-size: 1.2rem;
+    color: v.$accent-color !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-form {
+    background-color: v.$esports-border;
+    padding: 3rem;
+    border-radius: 12px;
+    border: 1px solid v.$border-color;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form .form-label {
+    color: v.$label-color !important;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.contact-form .form-control {
+    background-color: v.$gray-dark;
+    border: 1px solid v.$border-color;
+    color: v.$label-color;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    @extend .scale-in;
+}
+
+.contact-form .form-control:focus {
+    
+    border-color: v.$primary-color;
+    box-shadow: 0 0 0 0.2rem rgba(255, 144, 152, 0.25);
+    color: v.$label-color;
+}
+
+.contact-form .form-control::placeholder {
+    color: v.$placeholder-color;
+}
+
+.contact-form .form-control-color {
+    width: 60px;
+    height: 45px;
+    padding: 0.25rem;
+    border-radius: 8px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-media {
+    margin-top: 4rem;
+}
+
+.media-title {
+    color: v.$primary-color !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.map-container iframe,
+
+.contact-form label {
+    display: block;
+    width: 100%;
+    text-align: center;
+}

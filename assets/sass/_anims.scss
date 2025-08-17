@@ -1,0 +1,38 @@
+@use 'variables' as v;
+@keyframes outline-secondary-hover {
+	0% {
+		background-color: transparent;
+		border-color: v.$gray-light;
+		color: v.$secondary-color;
+	}
+	100% {
+		background-color: v.$gray-light;
+		border-color: v.$gray-light;
+		color: v.$secondary-color;
+	}
+}
+
+.outline-secondary-anim {
+	animation: outline-secondary-hover 0.3s ease forwards;
+}
+
+.lift-up {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	&:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 10px 20px rgba(255, 144, 152, 0.1);
+	}
+}
+.scale-up {
+	transition: transform 0.3s ease;
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+.scale-in {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.move-up{
+	transform: translateY(-5px);
+}

@@ -1,0 +1,287 @@
+@use 'variables' as v;
+@use 'anims';
+
+.teams-section {
+    padding: 2rem 3rem 2rem;
+    background-color: v.$background-color;
+    color: v.$secondary-color;
+    text-align: left;
+    border: 1px solid v.$esports-border;
+}
+
+.teams-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: v.$secondary-color !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.teams-subheading {
+    font-size: 0.9rem;
+    color: v.$secondary-color !important;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid v.$border-color;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.teams-subheading span {
+    color: v.$esports-pink;
+}
+
+.teams-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-box {
+    background-color: v.$esports-bg;
+    padding: 1.5rem;
+    border: 1px solid v.$esports-border;
+    border-radius: 8px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @extend .scale-in;
+}
+
+.team-box:hover {
+    transform: scale(1.05);
+    border-color: v.$esports-pink;
+}
+
+.team-box img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+/* =====================================
+   PÁGINA DE ESPORTS - LOGROS
+   ===================================== */
+.achievements-section {
+    padding: 4rem 3rem 3rem;
+    border-top: 1px solid #333;
+    margin-top: 2rem;
+}
+
+.achievements-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: v.$primary-color !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.achievement-card {
+    background-color: v.$gray-dark;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid v.$border-color;
+    @extend .scale-in;
+}
+
+.achievement-card:hover {
+    @extend .move-up;
+    box-shadow: 0 10px 20px rgba(255, 144, 152, 0.1);
+    border-color: v.$primary-color;
+}
+
+.achievement-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.achievement-card h3 {
+    color: v.$secondary-color !important;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.achievement-card p {
+    color: v.$accent-color !important;
+    font-size: 0.9rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* =====================================
+   PÁGINA DE ESPORTS - JUGADORES
+   ===================================== */
+.players-section {
+    padding: 4rem 3rem 3rem;
+    background-color: v.$background-color;
+    border-top: 1px solid v.$border-color;
+    margin-top: 2rem;
+}
+
+.players-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: v.$primary-color !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+}
+
+.players-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.player-card {
+    background-color: v.$esports-bg;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid v.$esports-border;
+    @extend .scale-in;
+}
+
+.player-card:hover {
+    @extend .move-up;
+    border-color: v.$primary-color;
+}
+
+.player-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    overflow: hidden;
+    border: 2px solid v.$primary-color;
+}
+
+.player-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.player-card h3 {
+    color: v.$secondary-color !important;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.player-role {
+    color: v.$primary-color !important;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.player-stats {
+    color: v.$accent-color !important;
+    font-size: 0.8rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* =====================================
+   PÁGINA DE ESPORTS - TORNEOS
+   ===================================== */
+.tournaments-section {
+    padding: 4rem 3rem 3rem;
+    border-top: 1px solid v.$border-color;
+    margin-top: 2rem;
+}
+
+.tournaments-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: v.$primary-color !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+}
+
+.tournaments-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tournament-item {
+    display: flex;
+    align-items: center;
+    background-color: v.$gray-dark;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid v.$border-color;
+    @extend .scale-in;
+}
+
+.tournament-item:hover {
+    @extend .move-up;
+    border-color: v.$primary-color;
+}
+
+.tournament-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: v.$primary-color;
+    color: black;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-right: 1.5rem;
+    min-width: 70px;
+}
+
+.tournament-date .day {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.tournament-date .month {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.tournament-info {
+    flex: 1;
+}
+
+.tournament-info h3 {
+    color: v.$secondary-color !important;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.tournament-info p {
+    color: v.$accent-color !important;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.tournament-prize {
+    color: v.$primary-color !important;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
