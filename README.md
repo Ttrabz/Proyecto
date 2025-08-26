@@ -1,6 +1,6 @@
 # Motion Team - Sitio Web Oficial
 
-![Motion Team Logo](./assets/img/LOGO__NOMBRE-02.png)
+![Motion Team Logo](./assets/img/logo_temp.png)
 
 ## 📋 Descripción del Proyecto
 
